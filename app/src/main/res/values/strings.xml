@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Пиццерия Феличита</string>
+    <string name="title">Феличита!!!</string>
+    <string name="pizza_like_all"> * Пицца как у всех!</string>
+    <string name="price_like_all"> * Цены как у всех!</string>
+    <string name="service_like_all"> * Обслужевание как у всех!</string>
+    <string name="time_like_all"> * Часы работы как у всех : 11:00 - 22:00</string>
+    <string name="motto">Наш девиз - мы не тратим деньги на рекламу! Мы просто тратим деньги!</string>
+    <string name="on_map">вулиця Хрещатик, 200, Черкаси, Черкаська область</string>
+    <string name="phone">0472 320 465</string>
+    <string name="email">wwe_wwf@ukr.net</string>
+</resources>

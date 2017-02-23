@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="2dp"
+    tools:context="com.example.alex.finalproject.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/pizza" />
+
+        <TextView
+            style="@style/TitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="125dp"
+            android:text="@string/title" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pizza_like_all" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price_like_all" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/service_like_all" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/time_like_all" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/img_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/compas" />
+
+            <TextView
+                android:id="@+id/txt_map"
+                style="@style/SrcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/on_map" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/txt_phone"
+                style="@style/SrcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/phone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/img_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/email" />
+
+            <TextView
+                android:id="@+id/txt_mail"
+                style="@style/SrcStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="1dp"
+                android:text="@string/email" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Motto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/motto" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
