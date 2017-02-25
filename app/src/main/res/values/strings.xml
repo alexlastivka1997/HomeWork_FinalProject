@@ -6,7 +6,8 @@
     <string name="service_like_all"> * Обслужевание как у всех!</string>
     <string name="time_like_all"> * Часы работы как у всех : 11:00 - 22:00</string>
     <string name="motto">Наш девиз - мы не тратим деньги на рекламу! Мы просто тратим деньги!</string>
-    <string name="on_map">вулиця Хрещатик, 200, Черкаси, Черкаська область</string>
-    <string name="phone">0472 320 465</string>
+    <string name="on_map">г. Черкассы, ул. Сумгаитская, 39</string>
+    <string name="phone">(063) 521-68-58</string>
     <string name="email">wwe_wwf@ukr.net</string>
+    <string name="call">Чтобы получить более детальную информациию посетите наш сайт</string>
 </resources>

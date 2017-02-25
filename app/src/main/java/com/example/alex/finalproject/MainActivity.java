@@ -20,11 +20,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView imgMap;
     ImageView imgEmail;
 
-    String geoUriString = "geo:49.442012,32.065156?z=18";
-    String phoneNum = "tel:0472320465";
+    Button btnClick;
+
+    String geoUriString = "geo:49.431190,32.012262";
+    String phoneNum = "tel:0635216858";
     String to = "WWE_WWF@ukr.net";
     String subject = "TEST";
     String text = "TEST";
+    String clickUri = "http://in.ck.ua/prima-felichita";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imgCall = (ImageView)findViewById(R.id.img_phone);
         imgEmail = (ImageView)findViewById(R.id.img_email);
 
+        btnClick = (Button)findViewById(R.id.btn_click);
 
         txtMap.setOnClickListener(this);
         txtCall.setOnClickListener(this);
@@ -47,6 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         imgMap.setOnClickListener(this);
         imgEmail.setOnClickListener(this);
         imgCall.setOnClickListener(this);
+
+        btnClick.setOnClickListener(this);
 
     }
 
@@ -77,25 +83,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case (R.id.txt_mail):
-                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                Intent emailIntent = new Intent(getPackageManager().getLaunchIntentForPackage("com.android.email"));
+
                 emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{to});
                 emailIntent.putExtra(Intent.EXTRA_SUBJECT,subject);
                 emailIntent.putExtra(Intent.EXTRA_TEXT,text);
 
-                emailIntent.setType("massage/rfc882");
-
-                startActivity(emailIntent.createChooser(emailIntent,"Выберите способ отправки Email"));
+                startActivity(emailIntent);
                 break;
 
             case (R.id.img_email):
-                Intent emailIntent1 = new Intent(Intent.ACTION_SEND);
+                Intent emailIntent1 = new Intent(getPackageManager().getLaunchIntentForPackage("com.android.email"));
+
                 emailIntent1.putExtra(Intent.EXTRA_EMAIL, new String[]{to});
                 emailIntent1.putExtra(Intent.EXTRA_SUBJECT,subject);
                 emailIntent1.putExtra(Intent.EXTRA_TEXT,text);
 
-                emailIntent1.setType("massage/rfc882");
+                startActivity(emailIntent1);
+                break;
 
-                startActivity(emailIntent1.createChooser(emailIntent1,"Выберите способ отправки Email"));
+            case (R.id.btn_click):
+                Intent clickIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(clickUri));
+
+                startActivity(clickIntent);
                 break;
 
         }
